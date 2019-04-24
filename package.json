@@ -6,12 +6,20 @@
     "start": "node server/bin/www"
   },
   "dependencies": {
+    "body-parser": "latest",
     "cookie-parser": "~1.4.3",
+    "cors": "^2.8.4",
+    "css-loader": "^2.1.1",
     "debug": "~2.6.9",
     "express": "~4.16.0",
     "express-es6-template-engine": "^2.1.8",
     "morgan": "~1.9.0",
-    "body-parser": "latest",
-    "cors": "^2.8.4"
+    "script-loader": "^0.7.2",
+    "style-loader": "^0.23.1",
+    "webpack-cli": "^3.3.1",
+    "webpack-dev-server": "^3.3.1"
+  },
+  "devDependencies": {
+    "webpack": "^4.30.0"
   }
 }
