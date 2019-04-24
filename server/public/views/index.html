@@ -21,7 +21,7 @@
 					<form action="/">
 						<div class="form-row">
 							<div class="form-group column">
-								<label for="inputPolicyMax">Policy Maximum <i class="fa fa-question-circle"></i></label>
+								<label for="inputPolicyMax">Policy Maximum <a href="#" class="tooltip-top" data-tooltip="Choose your policy maximum"><i class="fa fa-question-circle"></i></a></label>
 								<select id="inputPolicyMax" class="custom-select minimal" name="policy-maximum" required>
 									<option value="" selected>Choose your policy maximum</option>
 									<option value="50">50,000</option>
@@ -31,13 +31,13 @@
 								</select>
 							</div>
 							<div class="form-group column">
-								<label for="inputAge">Age/Year <i class="fa fa-question-circle"></i></label>
+								<label for="inputAge">Age/Year <a href="#" class="tooltip-top" data-tooltip="Enter a birth year or age"><i class="fa fa-question-circle"></i></a></label>
 								<input type="text" class="form-control" id="inputAge" name="age" placeholder="Choose your age" onfocus="(this.placeholder='')" onblur="(this.placeholder='Choose your age')" required>
 							</div>
 						</div>
 						<div class="form-row">
 							<div class="form-group">
-								<label for="inputTravelDates">Travel Dates (mm/dd/yyyy) <i class="fa fa-question-circle"></i></label>
+								<label for="inputTravelDates">Travel Dates (mm/dd/yyyy) <a href="#" class="tooltip-top" data-tooltip="Type or Select a Start and End Date"><i class="fa fa-question-circle"></i></a></label>
 								<div id="inputTravelDates" class="form-row">
 									<div class="form-group column">
 										<input type="date" class="form-control placeholderclass" id="inputStartDate" name="start-date" placeholder="Start Date" pattern="[0-9]{2}-[0-9]{2}-[0-9]{4}" onfocus="(this.placeholder='')" onblur="(this.placeholder='Start Date')" required>
@@ -48,13 +48,13 @@
 								</div>
 							</div>
 							<div class="form-group">
-								<label for="inputCitizenship">Citizenship <i class="fa fa-question-circle"></i></label>
+								<label for="inputCitizenship">Citizenship <a href="#" class="tooltip-top" data-tooltip="Cannot be more than a 100 years old"><i class="fa fa-question-circle"></i></a></label>
 								<input type="text" class="form-control placeholderclass" id="inputCitizenship" name="citizenship" placeholder="Choose Your Country of Citizenship" pattern="[A-Za-z]{3}" onfocus="(this.placeholder='')" onblur="(this.placeholder='Choose Your Country of Citizenship')" required>
 							</div>
 						</div>
 						<div class="form-row">
 							<div class="form-group column-md-6">
-								<label for="inputMailingState">Mailing State <i class="fa fa-question-circle"></i></label>
+								<label for="inputMailingState">Mailing State <a href="#" class="tooltip-top" data-tooltip="Choose your Mailing State"><i class="fa fa-question-circle"></i></a></label>
 								<input type="text" class="form-control placeholderclass" id="inputMailingState" name="mailing-state" onfocus="(this.placeholder='')" placeholder="Choose State"  pattern="[A-Za-z]{2}" onblur="(this.placeholder='Choose State')" required>
 							</div>
 
@@ -66,9 +66,7 @@
 								</span>
 							</button>
 							<div class="o-Valid-msg"><!----></div>
-							<button class="o-Btn__reset o-Btn__link">
-								<span>Reset Form</span>
-							</button>
+							<input type="reset" value="Reset Form" class="o-Btn__reset o-Btn__link">
 						</div>
 					</form>
 				</div>
